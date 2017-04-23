@@ -16,7 +16,7 @@ test('Hmtl', (assert) => {
 
   jsdom.env(index, (err, window) => {
     const actual = window.document.getElementsByTagName('h1')[0].innerHTML;
-    const expected = 'Starter Pack presented by HelloJetpacks';
+    const expected = 'Starter Pack presented by HelloJetpack';
     assert.same(actual, expected, msg);
     window.close();
     assert.end();
