@@ -1,0 +1,15 @@
+{
+    "extends": "airbnb",
+    "plugins": [
+        "react",
+        "jsx-a11y",
+        "import"
+    ],
+    "rules": {
+      "no-console":0,
+      "no-unused-vars": [1, {"vars": "local", "args": "none"}],
+      "arrow-body-style": [1, "as-needed"],
+      "no-confusing-arrow": ["error", {"allowParens": true}],
+      "import/no-dynamic-require":1
+    }
+}
