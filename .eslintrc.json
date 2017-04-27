@@ -11,5 +11,8 @@
       "arrow-body-style": [1, "as-needed"],
       "no-confusing-arrow": ["error", {"allowParens": true}],
       "import/no-dynamic-require":1
+    },
+    "env": {
+      "browser": true
     }
 }

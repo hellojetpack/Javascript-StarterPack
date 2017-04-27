@@ -20,6 +20,15 @@ app.set('port', 3000);
 
 app.use(express.static(path.join(__dirname, '../src')));
 
+app.get('/users', (req, res) => {
+  // hard coding for simplicity pretend this hits a real DB
+  res.json([
+    { id: 1, firstName: 'darth', lastName: 'vader', email: 'fake@fake.com' },
+    { id: 1, firstName: 'han', lastName: 'solo', email: 'fake@fake.com' },
+    { id: 1, firstName: 'luke', lastName: 'skywalker', email: 'fake@fake.com' },
+  ]);
+});
+
 app.get('/', (req, res) => res.render('../src/index'));
 
 app.listen(app.get('port'), () => {

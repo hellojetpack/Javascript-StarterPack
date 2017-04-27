@@ -1,5 +1,6 @@
 import path from 'path';
 import webpack from 'webpack';
+import HtmlWebPackPlugin from 'html-webpack-plugin';
 
 export default {
   devtool: 'inline-source-map',
@@ -13,9 +14,17 @@ export default {
     filename: 'bundle.js',
   },
   plugins: [
+
     new webpack.LoaderOptionsPlugin({
       debug: true,
     }),
+
+    // create html file that includes reference to bundled JS
+    new HtmlWebPackPlugin({
+      template: 'src/index.html',
+      inject: true,
+    }),
+
   ],
   module: {
     loaders: [
