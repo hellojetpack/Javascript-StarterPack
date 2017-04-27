@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/hellojetpack/starterpack.svg?branch=master)](https://travis-ci.org/hellojetpack/starterpack)
+[![Build Status](https://travis-ci.org/hellojetpack/JetPack.svg?branch=master)](https://travis-ci.org/hellojetpack/JetPack)
 
 :rocket: JetPack is a Javascript starter kit for rapid application development.
 
